@@ -35,5 +35,5 @@ gsutil -m  cp -r gs://grownome.appspot.com/images/ ./images
 Find all of the images you downloaded then rotate them with magick.
 ```bash
  find ./images -print| xargs -I{}  magick {}  -rotate "90>" {} 
-``
+```
 **xargs takes the output of the previous command and uses each line as the argument to another**
